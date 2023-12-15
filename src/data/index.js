@@ -123,7 +123,7 @@ const ChatList = [
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "08:42",
-    unread: 0,
+    unread: 12,
     pinned: false,
     online: false,
   },
@@ -224,7 +224,7 @@ export {
   Profile_Menu,
   Nav_Setting,
   Nav_Buttons,
-  ChatList,
+  ChatList as ChatListData,
   Chat_History,
   Message_options,
 };
