@@ -67,7 +67,7 @@ const MediaLinkMessage = ({ el }) => {
                                           component={Link}
                                           color={theme.palette.primary.main}
                                     >
-                                          www.youtube.com
+                                          https://www.youtube.com/watch?v=4K4OmnNxhe0
                                     </Typography>
                               </Stack>
                         </Stack>
@@ -93,9 +93,7 @@ const DocMediaMessage = ({ el }) => {
                               width: "max-content",
                         }}
                   >
-                        <Stack 
-                        spacing={1}
-                        >
+                        <Stack spacing={1}>
                               <Stack
                                     p={1}
                                     direction="row"
@@ -212,7 +210,14 @@ const ReplyMessage = ({ el }) => {
                               >
                                     <Typography
                                           variant="body2"
-                                          color={theme.palette.text}
+                                          // color={theme.palette.text}
+                                          style={{
+                                                color:
+                                                      theme.palette.mode ===
+                                                      "dark"
+                                                            ? "#999"
+                                                            : "#555",
+                                          }}
                                     >
                                           {el.message}
                                     </Typography>
