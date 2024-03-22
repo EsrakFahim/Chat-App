@@ -6,7 +6,6 @@ import { CaretDown, MagnifyingGlass, Phone, VideoCamera } from 'phosphor-react';
 
 const TopBar = () => {
       const theme = useTheme();
-      console.log(theme);
       return (
             <>
                   <Box 
