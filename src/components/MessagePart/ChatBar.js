@@ -7,12 +7,13 @@ const ChatBar = () => {
       const theme = useTheme()
 
       const ChatStyleBar = styled(TextField)(({ theme }) => ({
-            "& .MuiInputBase-Input": {
-                  '&:hover':{
-                        outline:'none'
-                  }
-            }
-      }))
+            "& .MuiInputBase-input": {
+                  height: '20px', // Set the desired height here
+                  '&:hover': {
+                        // Add any hover styles if needed
+                  },
+            },
+      }));
 
       return (
             <>
@@ -21,11 +22,13 @@ const ChatBar = () => {
                               width: '100%',
                               background: theme.palette.background.paper,
                               boxShadow: "0px 0px 4px rgba(0,0,0,0.5)",
+                              padding: '8px 12px',
                         }
-                  }
-                        p={2} >
+                  } >
                         <Stack direction={'row'} alignItems={'center'} sx={{ borderRadius: '8px' }} spacing={2} >
                               <ChatStyleBar
+                                    id="outlined-size-small"
+                                    size="small"
                                     fullWidth
                                     placeholder='Type your message...'
                                     InputProps={
@@ -47,6 +50,7 @@ const ChatBar = () => {
                                                 )
                                           }
                                     }
+                                    autoComplete="off"
                               />
                               <Box sx={
                                     {
@@ -56,7 +60,7 @@ const ChatBar = () => {
                                           background: `${theme.palette.primary.main}`,
                                     }
                               }>
-                                    <IconButton sx={{color:'#f2f2f2'}}>
+                                    <IconButton sx={{ color: '#f2f2f2' }}>
                                           <PaperPlaneTilt />
                                     </IconButton>
                               </Box>

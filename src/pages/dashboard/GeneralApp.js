@@ -21,7 +21,7 @@ const GeneralApp = () => {
           sx={
             {
               height:'100vh',
-              width:'calc(100vw - 360px)',
+              width:'calc(100vw - 322px)',
             }
           }
         >

@@ -24,7 +24,7 @@ const SearchIconContainer = styled("div")(({ theme }) => ({
 
 const SearchInputBar = styled(InputBase)(({ theme }) => ({
       "& .MuiInputBase-input": {
-            padding: theme.spacing(1, 1, 1, 0),
+            padding: theme.spacing(1, 0, 1, 0),
             paddingLeft: `calc(1em + ${theme.spacing(2)})`,
             width: '100%'
       }

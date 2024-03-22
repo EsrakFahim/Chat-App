@@ -9,14 +9,18 @@ const TopBar = () => {
       console.log(theme);
       return (
             <>
-                  <Box sx={
+                  <Box 
+                  // px={1.5}
+                  // py={1}
+                  sx={
                         {
                               width: '100%',
                               background: theme.palette.background.paper,
                               boxShadow: "0px 0px 4px rgba(0,0,0,0.5)",
+                              padding:'8px 12px'
                         }
                   }>
-                        <Stack alignItems={'center'} direction={'row'} justifyContent={'space-between'} p={2} sx={{ width: '100%', height: '100%' }}>
+                        <Stack alignItems={'center'} direction={'row'} justifyContent={'space-between'}  sx={{ width: '100%', height: '100%' }}>
                               <Stack direction={'row'} spacing={1.2}>
                                     <Box>
                                           <BadgeAvatar img={`${faker.image.avatar()}`} />

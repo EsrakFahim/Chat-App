@@ -15,7 +15,7 @@ const ChatList = () => {
         <>
             <Box sx={
                 {
-                    width: "300px",
+                    width: "280px",
                     height: '100%',
                     background: theme.palette.background.paper,
                     boxShadow: "0px 0px 4px rgba(0,0,0,0.5)",
